@@ -1,3 +1,6 @@
 import GameSavingLoader from './GameSavingLoader';
 
-console.log('123');
+GameSavingLoader.load().then(
+  (saving) => console.log(saving),
+  (error) => console.log(error),
+);
